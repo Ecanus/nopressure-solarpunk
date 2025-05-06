@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cam36v080rgyo"]
+
+[ext_resource type="Script" uid="uid://5tq5nslt21gh" path="res://player.gd" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://c0ypmygd1cug7" path="res://lilduck.png" id="2_onrkg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i3pqv"]
+size = Vector2(88, 148)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_4flbx")
+
+[node name="Lilduck" type="Sprite2D" parent="."]
+position = Vector2(557, 331)
+texture = ExtResource("2_onrkg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(556, 330)
+shape = SubResource("RectangleShape2D_i3pqv")
