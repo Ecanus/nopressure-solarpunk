@@ -3,6 +3,7 @@ extends Node2D
 # This is the tutorial that I followed for this: https://www.youtube.com/watch?v=pQINWFKc9_k
 
 @onready var interact_label: Label = $InteractLabel
+
 var current_interactions := []
 var can_interact := true
 
@@ -29,11 +30,9 @@ func _sort_by_nearest(area1, area2):
 	var area1_dist = global_position.distance_to(area1.global_position)
 	var area2_dist = global_position.distance_to(area2.global_position)
 	return area1_dist < area2_dist
-	
 
 func _on_interact_range_area_entered(area: Area2D) -> void:
 	current_interactions.push_back(area)
-
-
+	
 func _on_interact_range_area_exited(area: Area2D) -> void:
 	current_interactions.erase(area)

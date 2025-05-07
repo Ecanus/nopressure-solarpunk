@@ -19,4 +19,3 @@ position = Vector2(-2, 0)
 shape = SubResource("RectangleShape2D_i3pqv")
 
 [node name="InteractingComponent" parent="." instance=ExtResource("3_i3pqv")]
-position = Vector2(-2, -2)

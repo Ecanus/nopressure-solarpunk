@@ -7,13 +7,14 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v4gdy"]
 size = Vector2(20, 35)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_n5lxo"]
-size = Vector2(16.1215, 20)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bviin"]
+size = Vector2(164, 78)
 
 [node name="donuts" type="StaticBody2D"]
 script = ExtResource("1_1s3h3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(0, 1.5)
 scale = Vector2(8.24, 1)
 shape = SubResource("RectangleShape2D_v4gdy")
@@ -23,9 +24,8 @@ debug_color = Color(0.828614, 0.337155, 0.538525, 0.42)
 texture = ExtResource("2_bviin")
 
 [node name="Interactable" parent="." instance=ExtResource("3_405fl")]
-position = Vector2(0, 5)
+interact_name = "eat a donut"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
-position = Vector2(-2.86102e-06, -4)
-scale = Vector2(10.2968, 1.75526)
-shape = SubResource("RectangleShape2D_n5lxo")
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_bviin")

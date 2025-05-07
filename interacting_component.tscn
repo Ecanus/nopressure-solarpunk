@@ -12,6 +12,8 @@ font_size = 24
 script = ExtResource("1_0w7yd")
 
 [node name="InteractRange" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractRange"]
 shape = SubResource("CircleShape2D_0w7yd")
