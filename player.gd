@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var speed: int = 300
+var speed: int = 200
 var click_position = Vector2()
 var target_position = Vector2()
 
