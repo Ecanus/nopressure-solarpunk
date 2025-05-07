@@ -4,7 +4,7 @@ extends StaticBody2D
 
 @onready var interactable: Area2D = $Interactable
 @onready var lildonuts: Sprite2D = $Lildonuts
-@onready var animated_sprite_2d: AnimatedSprite2D = $"../Player/AnimatedSprite2D"
+@onready var animated_sprite_2d: AnimatedSprite2D = $"../Player/AnimatedSprite2D" 
 
 
 func _ready() -> void:

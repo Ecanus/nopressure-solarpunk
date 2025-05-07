@@ -27,6 +27,7 @@ func _process(_delta: float) -> void:
 			$"../AnimatedSprite2D".play("think")
 	else:
 		interact_label.hide()
+		$"../AnimatedSprite2D".play("default")
 
 func _sort_by_nearest(area1, area2):
 	var area1_dist = global_position.distance_to(area1.global_position)
