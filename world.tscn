@@ -7,12 +7,14 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="floor" parent="." instance=ExtResource("1_fj7yv")]
-position = Vector2(537, 568)
+position = Vector2(930, 825)
+scale = Vector2(1.72, 1.72)
 tile_map_data = PackedByteArray("AAD9/wAAAgAAAAAAAAD9////AgAAAAAAAAD9//7/AgAAAAAAAAD9//3/AgAAAAAAAAD+//3/AgAAAAAAAAD+//7/AgAAAAAAAAD+////AgAAAAAAAAD+/wAAAgAAAAAAAAD///3/AgAAAAAAAAD///7/AgAAAAAAAAD/////AgAAAAAAAAD//wAAAgAAAAAAAAD+/wEAAgAAAAAAAAD8/wAAAgAAAAAAAAD8////AgAAAAAAAAD7////AgAAAAAAAAD7//7/AgAAAAAAAAD7//3/AgAAAAAAAAD7//z/AgAAAAAAAAD7//v/AgAAAAAAAAD8//v/AgAAAAAAAAD8//r/AgAAAAAAAAD9//r/AgAAAAAAAAD9//v/AgAAAAAAAAD9//z/AgAAAAAAAAD8//7/AgAAAAAAAAD8//3/AgAAAAAAAAD8//z/AgAAAAAAAAD+//z/AgAAAAAAAAD///z/AgAAAAAAAAD+//v/AgAAAAAAAAD+//r/AgAAAAAAAAD6//7/AgAAAAAAAAD5//7/AgAAAAAAAAA=")
 
 [node name="Player" parent="." instance=ExtResource("2_tlwt5")]
-position = Vector2(404, 326)
-scale = Vector2(0.535, 0.535)
+position = Vector2(475, 302)
+scale = Vector2(1.72, 1.72)
 
 [node name="donuts" parent="." instance=ExtResource("3_tlwt5")]
-position = Vector2(729, 356)
+position = Vector2(1329, 438)
+scale = Vector2(1.72, 1.72)

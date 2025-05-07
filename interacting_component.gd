@@ -16,6 +16,7 @@ func _input(event: InputEvent) -> void:
 			await current_interactions[0].interact.call()
 			
 			can_interact = true
+			$"../AnimatedSprite2D".play("default")
 
 func _process(_delta: float) -> void:	
 	if current_interactions and can_interact:
@@ -23,6 +24,7 @@ func _process(_delta: float) -> void:
 		if current_interactions[0].is_interactable:
 			interact_label.text = current_interactions[0].interact_name
 			interact_label.show()
+			$"../AnimatedSprite2D".play("think")
 	else:
 		interact_label.hide()
 

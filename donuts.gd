@@ -4,6 +4,7 @@ extends StaticBody2D
 
 @onready var interactable: Area2D = $Interactable
 @onready var lildonuts: Sprite2D = $Lildonuts
+@onready var animated_sprite_2d: AnimatedSprite2D = $"../Player/AnimatedSprite2D"
 
 
 func _ready() -> void:
@@ -14,4 +15,5 @@ func _on_interact():
 	if lildonuts.frame == 0:
 		lildonuts.frame = 1
 		interactable.is_interactable = false
+		animated_sprite_2d.play("wave")
 		print("the player ate a donut")
