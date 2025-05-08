@@ -1,0 +1,97 @@
+[gd_scene load_steps=8 format=3 uid="uid://nsf7lcfarp2c"]
+
+[ext_resource type="Texture2D" uid="uid://68y0xof6yl67" path="res://start_menu_folder/buildingDraft.png" id="1_001th"]
+[ext_resource type="Script" uid="uid://bs5bj4n08wcb8" path="res://start_menu_folder/start_menu.gd" id="1_cc8u4"]
+[ext_resource type="FontFile" uid="uid://dghpr2tcr60b3" path="res://start_menu_folder/Skygraze.otf" id="2_cc8u4"]
+[ext_resource type="AudioStream" uid="uid://cm23pihw7jkfp" path="res://start_menu_folder/A une prochaine fois (credits OST).mp3" id="4_3vq8b"]
+[ext_resource type="Script" uid="uid://eebqylp5q54e" path="res://start_menu_folder/audio_stream_player.gd" id="5_n6irt"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3vq8b"]
+texture = ExtResource("1_001th")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n6irt"]
+bg_color = Color(0.415686, 0.243137, 0.356863, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="StartMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cc8u4")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_3vq8b")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 528.0
+offset_top = 184.0
+offset_right = 918.0
+offset_bottom = 455.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 9
+
+[node name="Start Game" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 7
+theme_override_fonts/font = ExtResource("2_cc8u4")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_n6irt")
+text = "Start Game"
+
+[node name="Exit Game" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 7
+theme_override_fonts/font = ExtResource("2_cc8u4")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_n6irt")
+text = "Exit Game"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.207
+anchor_top = 0.156
+anchor_right = 0.207
+anchor_bottom = 0.156
+offset_left = -366.44
+offset_top = -159.48
+offset_right = 327.56
+offset_bottom = 88.52
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.882353, 0.827451, 0.654902, 1)
+theme_override_colors/font_shadow_color = Color(0.550874, 0.488502, 0.290571, 1)
+theme_override_constants/shadow_offset_x = -5
+theme_override_constants/shadow_offset_y = 8
+theme_override_fonts/font = ExtResource("2_cc8u4")
+theme_override_font_sizes/font_size = 90
+text = "No Pressure"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_3vq8b")
+autoplay = true
+script = ExtResource("5_n6irt")
+
+[connection signal="pressed" from="VBoxContainer/Start Game" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Exit Game" to="." method="_on_exit_pressed"]
+[connection signal="ready" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_ready"]
