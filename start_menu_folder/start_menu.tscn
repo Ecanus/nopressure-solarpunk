@@ -1,8 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://nsf7lcfarp2c"]
+[gd_scene load_steps=8 format=3 uid="uid://nsf7lcfarp2c"]
 
 [ext_resource type="Texture2D" uid="uid://68y0xof6yl67" path="res://start_menu_folder/buildingDraft.png" id="1_001th"]
 [ext_resource type="Script" uid="uid://bs5bj4n08wcb8" path="res://start_menu_folder/start_menu.gd" id="1_cc8u4"]
 [ext_resource type="FontFile" uid="uid://dghpr2tcr60b3" path="res://start_menu_folder/Skygraze.otf" id="2_cc8u4"]
+[ext_resource type="AudioStream" uid="uid://cm23pihw7jkfp" path="res://start_menu_folder/A une prochaine fois (credits OST).mp3" id="4_3vq8b"]
+[ext_resource type="Script" uid="uid://eebqylp5q54e" path="res://start_menu_folder/audio_stream_player.gd" id="5_n6irt"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3vq8b"]
 texture = ExtResource("1_001th")
@@ -85,5 +87,11 @@ text = "No Pressure"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_3vq8b")
+autoplay = true
+script = ExtResource("5_n6irt")
+
 [connection signal="pressed" from="VBoxContainer/Start Game" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Exit Game" to="." method="_on_exit_pressed"]
+[connection signal="ready" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_ready"]
