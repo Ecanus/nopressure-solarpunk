@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://nsf7lcfarp2c"]
+[gd_scene load_steps=12 format=3 uid="uid://nsf7lcfarp2c"]
 
 [ext_resource type="Texture2D" uid="uid://68y0xof6yl67" path="res://start_menu_folder/buildingDraft.png" id="1_001th"]
 [ext_resource type="Script" uid="uid://bs5bj4n08wcb8" path="res://start_menu_folder/start_menu.gd" id="1_cc8u4"]
 [ext_resource type="FontFile" uid="uid://dghpr2tcr60b3" path="res://start_menu_folder/Skygraze.otf" id="2_cc8u4"]
 [ext_resource type="AudioStream" uid="uid://cm23pihw7jkfp" path="res://start_menu_folder/A une prochaine fois (credits OST).mp3" id="4_3vq8b"]
 [ext_resource type="Script" uid="uid://eebqylp5q54e" path="res://start_menu_folder/audio_stream_player.gd" id="5_n6irt"]
+[ext_resource type="Script" uid="uid://di8145rxhuf6o" path="res://start_menu_folder/audio_control.gd" id="6_jfvca"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3vq8b"]
 texture = ExtResource("1_001th")
@@ -15,6 +16,18 @@ corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_n6irt"]
+color = Color(0.945098, 0.945098, 0.94902, 1)
+thickness = 6
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_jfvca"]
+color = Color(0.290196, 0.388235, 0.509804, 1)
+thickness = 6
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_hlw8f"]
+color = Color(0.290196, 0.388235, 0.509804, 1)
+thickness = 6
 
 [node name="StartMenu" type="Control"]
 layout_mode = 3
@@ -90,8 +103,25 @@ vertical_alignment = 1
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_3vq8b")
 autoplay = true
+bus = &"Music"
 script = ExtResource("5_n6irt")
+
+[node name="AudioControl" type="HSlider" parent="."]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 971.0
+offset_right = 384.0
+offset_bottom = 992.0
+theme_override_styles/slider = SubResource("StyleBoxLine_n6irt")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_jfvca")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_hlw8f")
+max_value = 1.0
+step = 0.05
+value = 1.0
+script = ExtResource("6_jfvca")
+audio_bus_name = "Music"
 
 [connection signal="pressed" from="VBoxContainer/Start Game" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Exit Game" to="." method="_on_exit_pressed"]
 [connection signal="ready" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_ready"]
+[connection signal="value_changed" from="AudioControl" to="AudioControl" method="_on_value_changed"]
