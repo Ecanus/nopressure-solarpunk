@@ -11,8 +11,7 @@ script = ExtResource("1_aqk2v")
 [node name="floor" parent="." instance=ExtResource("1_fj7yv")]
 position = Vector2(930, 825)
 scale = Vector2(2.355, 2.355)
-tile_map_data = PackedByteArray("AAD8//7/AAAAAAAAAAD8////AAAAAAAAAAD9//3/AAAAAAAAAAD9//7/AAAAAAAAAAD9////AAAAAAAAAAD+//3/AAAAAAAAAAD+//7/AAAAAAAAAAD+////AAAAAAAAAAD8//3/AAAAAAAAAADx//z/AAAAAAAAAAA=")
-navigation_visibility_mode = 1
+tile_map_data = PackedByteArray("AAD8//3/AAAAAAAAAAD8//7/AAAAAAAAAAD8////AAAAAAAAAAD9//3/AAAAAAAAAAD9//7/AAABAAAAAAD9////AAAAAAAAAAD+//3/AAABAAAAAAD+//7/AAABAAAAAAD+////AAABAAAAAAA=")
 
 [node name="Player" parent="." instance=ExtResource("2_tlwt5")]
 z_index = 1
