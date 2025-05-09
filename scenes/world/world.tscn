@@ -1,18 +1,23 @@
-[gd_scene load_steps=5 format=4 uid="uid://da4brh2plfdgs"]
+[gd_scene load_steps=7 format=4 uid="uid://da4brh2plfdgs"]
 
 [ext_resource type="Script" uid="uid://b81kensu6nalv" path="res://scenes/world/world.gd" id="1_aqk2v"]
 [ext_resource type="PackedScene" uid="uid://iyssuun2hbti" path="res://scenes/floor/floor.tscn" id="1_fj7yv"]
+[ext_resource type="PackedScene" uid="uid://cfv5ifh5oobbw" path="res://scenes/world/front_building.tscn" id="2_t5ptc"]
 [ext_resource type="PackedScene" uid="uid://cam36v080rgyo" path="res://scenes/player/player.tscn" id="2_tlwt5"]
+[ext_resource type="PackedScene" uid="uid://cyltdtwhwkeui" path="res://scenes/world/background.tscn" id="2_v5dby"]
 [ext_resource type="PackedScene" uid="uid://cikwhhy5op7ji" path="res://scenes/donuts/donuts.tscn" id="3_tlwt5"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_aqk2v")
 
+[node name="front_building" parent="." instance=ExtResource("2_t5ptc")]
+
+[node name="background" parent="." instance=ExtResource("2_v5dby")]
+
 [node name="floor" parent="." instance=ExtResource("1_fj7yv")]
-position = Vector2(930, 825)
-scale = Vector2(2.355, 2.355)
-tile_map_data = PackedByteArray("AAD8//7/AAAAAAAAAAD8////AAAAAAAAAAD9//3/AAAAAAAAAAD9//7/AAAAAAAAAAD9////AAAAAAAAAAD+//3/AAAAAAAAAAD+//7/AAAAAAAAAAD+////AAAAAAAAAAD8//3/AAAAAAAAAADx//z/AAAAAAAAAAA=")
-navigation_visibility_mode = 1
+position = Vector2(802, 829)
+scale = Vector2(2.725, 2.725)
+tile_map_data = PackedByteArray("AAD9//3/AAAAAAAAAAD9//7/AAAAAAAAAAD9////AAAAAAAAAAD+//3/AAAAAAAAAAD+//7/AAAAAAAAAAD+////AAAAAAAAAAD///3/AAAAAAAAAAD///7/AAAAAAAAAAD/////AAAAAAAAAAA=")
 
 [node name="Player" parent="." instance=ExtResource("2_tlwt5")]
 z_index = 1
