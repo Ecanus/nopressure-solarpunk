@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://cikwhhy5op7ji"]
 
-[ext_resource type="Script" uid="uid://cwhvuwomuyxdf" path="res://donuts.gd" id="1_1s3h3"]
+[ext_resource type="Script" uid="uid://cwhvuwomuyxdf" path="res://scenes/donuts/donuts.gd" id="1_1s3h3"]
 [ext_resource type="Texture2D" uid="uid://d2kpbjrgvgojm" path="res://lildonuts.png" id="2_bviin"]
-[ext_resource type="PackedScene" uid="uid://bgfvh33m1mgvo" path="res://interactable.tscn" id="3_405fl"]
+[ext_resource type="PackedScene" uid="uid://bgfvh33m1mgvo" path="res://scenes/interactable/interactable.tscn" id="3_405fl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v4gdy"]
 size = Vector2(20, 31)

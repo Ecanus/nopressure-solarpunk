@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjo0y54jlk8j5"
-path="res://.godot/imported/Basic Tile_Grass.png-a6103fd143ece8f4c2336f622d86aed2.ctex"
+uid="uid://pgbwhibh5yct"
+path="res://.godot/imported/Compost Tile.png-e17ca3a6d075b3a88cf1b6870371992a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Basic Tile_Grass.png"
-dest_files=["res://.godot/imported/Basic Tile_Grass.png-a6103fd143ece8f4c2336f622d86aed2.ctex"]
+source_file="res://art_assets/tiles/Compost Tile.png"
+dest_files=["res://.godot/imported/Compost Tile.png-e17ca3a6d075b3a88cf1b6870371992a.ctex"]
 
 [params]
 

@@ -1,10 +1,10 @@
 [gd_scene load_steps=8 format=3 uid="uid://cam36v080rgyo"]
 
-[ext_resource type="Script" uid="uid://5tq5nslt21gh" path="res://player.gd" id="1_4flbx"]
-[ext_resource type="Texture2D" uid="uid://ctgmtuh37kogd" path="res://mainchar_default_128.png" id="2_i3pqv"]
-[ext_resource type="PackedScene" uid="uid://bjhyduhncl185" path="res://interacting_component.tscn" id="3_i3pqv"]
-[ext_resource type="Texture2D" uid="uid://di8ci1sxnjq1u" path="res://mainchar_think_128.png" id="4_sweqy"]
-[ext_resource type="Texture2D" uid="uid://i7qr633x7baf" path="res://mainchar_wave_128.png" id="5_2hs0m"]
+[ext_resource type="Script" uid="uid://5tq5nslt21gh" path="res://scenes/player/player.gd" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://ctgmtuh37kogd" path="res://art_assets/actors/mainchar_default_128.png" id="2_i3pqv"]
+[ext_resource type="PackedScene" uid="uid://bjhyduhncl185" path="res://scenes/interactable_components/interacting_component.tscn" id="3_i3pqv"]
+[ext_resource type="Texture2D" uid="uid://di8ci1sxnjq1u" path="res://art_assets/actors/mainchar_think_128.png" id="4_sweqy"]
+[ext_resource type="Texture2D" uid="uid://i7qr633x7baf" path="res://art_assets/actors/mainchar_wave_128.png" id="5_2hs0m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i3pqv"]
 size = Vector2(59, 112)

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://pgbwhibh5yct"
-path="res://.godot/imported/Compost Tile.png-1229f2bf29781cd1003e6805237de722.ctex"
+uid="uid://c1okgqyxn1bl5"
+path="res://.godot/imported/Building_Front.png-e090efa0da4a2a17890e005aa4b02840.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Compost Tile.png"
-dest_files=["res://.godot/imported/Compost Tile.png-1229f2bf29781cd1003e6805237de722.ctex"]
+source_file="res://art_assets/world/Building_Front.png"
+dest_files=["res://.godot/imported/Building_Front.png-e090efa0da4a2a17890e005aa4b02840.ctex"]
 
 [params]
 

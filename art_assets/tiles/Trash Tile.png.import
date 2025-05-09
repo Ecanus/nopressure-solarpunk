@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1jui4eu2rioy"
-path="res://.godot/imported/tile_export_128x64.png-0a751ed6949bbfa5e2196c3da1a3f5a0.ctex"
+uid="uid://dnhhekxl1okd8"
+path="res://.godot/imported/Trash Tile.png-116a989ec9efbd63aa85756e2ca9d337.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tile_export_128x64.png"
-dest_files=["res://.godot/imported/tile_export_128x64.png-0a751ed6949bbfa5e2196c3da1a3f5a0.ctex"]
+source_file="res://art_assets/tiles/Trash Tile.png"
+dest_files=["res://.godot/imported/Trash Tile.png-116a989ec9efbd63aa85756e2ca9d337.ctex"]
 
 [params]
 

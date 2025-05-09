@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://di8ci1sxnjq1u"
-path="res://.godot/imported/mainchar_think_128.png-d3f53a06c7d2c0caaa5e5aacf64638b0.ctex"
+uid="uid://i7qr633x7baf"
+path="res://.godot/imported/mainchar_wave_128.png-df155dc424dad51e3e22d7b8269f55b3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mainchar_think_128.png"
-dest_files=["res://.godot/imported/mainchar_think_128.png-d3f53a06c7d2c0caaa5e5aacf64638b0.ctex"]
+source_file="res://art_assets/actors/mainchar_wave_128.png"
+dest_files=["res://.godot/imported/mainchar_wave_128.png-df155dc424dad51e3e22d7b8269f55b3.ctex"]
 
 [params]
 

@@ -9,7 +9,7 @@ func _ready() -> void:
 	pass
 	
 func _process(_delta: float) -> void:
-	if Input.is_action_just_pressed("tile_test"):
+	if Input.is_action_just_pressed("interact"):
 		var mouse_pos: Vector2 = get_global_mouse_position()
 		#var mouse_pos: Vector2 = get_local_mouse_position()
 		var tile_map_pos: Vector2i = tile_map.local_to_map(mouse_pos)

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctgmtuh37kogd"
-path="res://.godot/imported/mainchar_default_128.png-f26b99428219cde8c6402aea3a152d0d.ctex"
+uid="uid://c6pegwukeoxnv"
+path="res://.godot/imported/SustainTile_WindTurbine.png-3833be4b1f16dfd9a2c6e105987b68a1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mainchar_default_128.png"
-dest_files=["res://.godot/imported/mainchar_default_128.png-f26b99428219cde8c6402aea3a152d0d.ctex"]
+source_file="res://art_assets/tiles/SustainTile_WindTurbine.png"
+dest_files=["res://.godot/imported/SustainTile_WindTurbine.png-3833be4b1f16dfd9a2c6e105987b68a1.ctex"]
 
 [params]
 
