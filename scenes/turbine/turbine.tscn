@@ -1,27 +1,26 @@
 [gd_scene load_steps=5 format=3 uid="uid://cgih52fmkkit0"]
 
-[ext_resource type="Script" uid="uid://cwhvuwomuyxdf" path="res://scenes/donuts/donuts.gd" id="1_qnfgh"]
+[ext_resource type="Script" uid="uid://bappw1e7rmg1t" path="res://scenes/turbine/turbine.gd" id="1_uyv7x"]
 [ext_resource type="Texture2D" uid="uid://c6pegwukeoxnv" path="res://art_assets/tiles/SustainTile_WindTurbine.png" id="2_uyv7x"]
 [ext_resource type="PackedScene" uid="uid://bgfvh33m1mgvo" path="res://scenes/interactable/interactable.tscn" id="3_f0avi"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_bviin"]
-size = Vector2(497.323, 67.9202)
+[sub_resource type="CircleShape2D" id="CircleShape2D_uyv7x"]
 
 [node name="turbine" type="StaticBody2D"]
-script = ExtResource("1_qnfgh")
+script = ExtResource("1_uyv7x")
 
-[node name="CollisionShape2D" type="CollisionPolygon2D" parent="."]
-position = Vector2(-45.5, 77)
-scale = Vector2(5.145, 0.624)
-polygon = PackedVector2Array(115.595, -611, 139.867, 1, 110.74, 307, 36.4684, 238, -41.6869, 564, -43.1432, 747, -70.9345, 772, -115.959, 584, -104.066, 344, -74.3325, 270, -27.8519, 95, -20.9345, -244, -24.4539, -835, 44.3568, -1047, 93.3859, -904)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-682, 587)
+scale = Vector2(28.585, 27.144)
+shape = SubResource("CircleShape2D_uyv7x")
 
 [node name="turbine" type="Sprite2D" parent="."]
 texture = ExtResource("2_uyv7x")
 
 [node name="Interactable" parent="." instance=ExtResource("3_f0avi")]
-interact_name = "[E] to place Wind Turbine"
+interact_name = "[E] to place turbine"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
-position = Vector2(89, 192)
-scale = Vector2(2.33806, 8.05357)
-shape = SubResource("RectangleShape2D_bviin")
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Interactable"]
+position = Vector2(-682, 587)
+scale = Vector2(28.585, 27.144)
+shape = SubResource("CircleShape2D_uyv7x")

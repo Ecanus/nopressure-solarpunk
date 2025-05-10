@@ -11,9 +11,10 @@ func _ready() -> void:
 
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("interact"):
-		var mouse_pos: Vector2 = get_global_mouse_position()
-		#var mouse_pos: Vector2 = get_local_mouse_position()
-		var tile_map_pos: Vector2i = tile_map.local_to_map(mouse_pos)
+		#var mouse_pos: Vector2 = get_global_mouse_position()
+		var char_pos: Vector2 = $Player.global_position
+		#var tile_map_pos: Vector2i = tile_map.local_to_map(mouse_pos)
+		var tile_map_pos: Vector2i = tile_map.local_to_map(char_pos)
 		# Tile 1
 		if tile_map_pos.x >= 11 && tile_map_pos.x <= 14 and tile_map_pos.y >= -3 && tile_map_pos.y <= 0 :
 			cell_pos.x = -3
@@ -58,5 +59,7 @@ func _process(_delta: float) -> void:
 		print(tile_map_pos)
 		#This gets the cell position
 		print (cell_pos)
+		#This gets the char's position
+		print(char_pos)
 		
 		

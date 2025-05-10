@@ -9,12 +9,10 @@ extends StaticBody2D
 
 func _ready() -> void:
 	interactable.interact = _on_interact
+	turbine.hide()
 	
 	
 func _on_interact():
-	if turbine.frame == 0:
-		turbine.frame = 1
-		interactable.is_interactable = false
-		if $turbine:
-			$turbine.queue_free()
-		print("the player ate a donut")
+	print("This is turbine")
+	turbine.show()
+		#print("the player ate a donut")

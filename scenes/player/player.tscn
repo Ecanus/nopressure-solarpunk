@@ -49,7 +49,7 @@ motion_mode = 1
 script = ExtResource("1_4flbx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, -13.5)
+position = Vector2(-0.5, 17)
 shape = SubResource("RectangleShape2D_i3pqv")
 
 [node name="InteractingComponent" parent="." instance=ExtResource("3_i3pqv")]

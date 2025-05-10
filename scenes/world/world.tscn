@@ -26,16 +26,14 @@ z_index = 1
 position = Vector2(1551, 414)
 scale = Vector2(1.72, 1.72)
 
+[node name="turbine" parent="." instance=ExtResource("7_bq33v")]
+position = Vector2(835, 582)
+scale = Vector2(0.13, 0.13)
+
 [node name="donuts" parent="." instance=ExtResource("3_tlwt5")]
-visible = false
 position = Vector2(981, 465)
 scale = Vector2(0.345, 0.345)
 
 [node name="donuts2" parent="." instance=ExtResource("3_tlwt5")]
-visible = false
 position = Vector2(1322, 650)
 scale = Vector2(0.345, 0.345)
-
-[node name="turbine" parent="." instance=ExtResource("7_bq33v")]
-position = Vector2(835, 582)
-scale = Vector2(0.13, 0.13)
