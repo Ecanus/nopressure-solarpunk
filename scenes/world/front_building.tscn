@@ -1,15 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://cfv5ifh5oobbw"]
+[gd_scene load_steps=2 format=3 uid="uid://cfv5ifh5oobbw"]
 
-[ext_resource type="Texture2D" uid="uid://bshjeaty7t85p" path="res://art_assets/world/proof_of_concept.png" id="1_ob3rq"]
 [ext_resource type="Texture2D" uid="uid://c1okgqyxn1bl5" path="res://art_assets/world/Building_Front.png" id="2_0dtiw"]
 
 [node name="front_building" type="Node2D"]
-
-[node name="ProofOfConcept" type="Sprite2D" parent="."]
-position = Vector2(962, 544)
-texture = ExtResource("1_ob3rq")
 
 [node name="BuildingFront" type="Sprite2D" parent="."]
 z_index = 8
 position = Vector2(956, 542)
 texture = ExtResource("2_0dtiw")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="BuildingFront2" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(964, 538)
+texture = ExtResource("2_0dtiw")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(455, 532, 993, 805, 1548, 530, 1611, 559, 1613, 623, 1611, 1081, 357, 1079, 359, 625, 344, 587, 355, 539)

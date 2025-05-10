@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bivw56v627ebm"
-path="res://.godot/imported/floor_tileset_test.png-502d40860e895ff70f918b962de30712.ctex"
+uid="uid://c6w6gsj2ed1w2"
+path="res://.godot/imported/Building_FireEscape.png-1b3a70eca204cd8e7f0ac534a2a9920d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://floor_tileset_test.png"
-dest_files=["res://.godot/imported/floor_tileset_test.png-502d40860e895ff70f918b962de30712.ctex"]
+source_file="res://art_assets/world/Building_FireEscape.png"
+dest_files=["res://.godot/imported/Building_FireEscape.png-1b3a70eca204cd8e7f0ac534a2a9920d.ctex"]
 
 [params]
 

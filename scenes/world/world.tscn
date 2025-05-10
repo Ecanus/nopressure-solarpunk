@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=4 uid="uid://da4brh2plfdgs"]
+[gd_scene load_steps=8 format=4 uid="uid://da4brh2plfdgs"]
 
 [ext_resource type="Script" uid="uid://b81kensu6nalv" path="res://scenes/world/world.gd" id="1_aqk2v"]
 [ext_resource type="PackedScene" uid="uid://iyssuun2hbti" path="res://scenes/floor/floor.tscn" id="1_fj7yv"]
@@ -6,9 +6,11 @@
 [ext_resource type="PackedScene" uid="uid://cam36v080rgyo" path="res://scenes/player/player.tscn" id="2_tlwt5"]
 [ext_resource type="PackedScene" uid="uid://cyltdtwhwkeui" path="res://scenes/world/background.tscn" id="2_v5dby"]
 [ext_resource type="PackedScene" uid="uid://cikwhhy5op7ji" path="res://scenes/donuts/donuts.tscn" id="3_tlwt5"]
+[ext_resource type="PackedScene" uid="uid://cgih52fmkkit0" path="res://scenes/turbine/turbine.tscn" id="7_bq33v"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_aqk2v")
+metadata/_edit_vertical_guides_ = [960.0]
 
 [node name="front_building" parent="." instance=ExtResource("2_t5ptc")]
 
@@ -21,9 +23,19 @@ tile_map_data = PackedByteArray("AAD9//3/AAAAAAAAAAD9//7/AAAAAAAAAAD9////AAAAAAA
 
 [node name="Player" parent="." instance=ExtResource("2_tlwt5")]
 z_index = 1
-position = Vector2(589, 453)
+position = Vector2(1551, 414)
 scale = Vector2(1.72, 1.72)
 
 [node name="donuts" parent="." instance=ExtResource("3_tlwt5")]
-position = Vector2(1295, 509)
-scale = Vector2(1.72, 1.72)
+visible = false
+position = Vector2(981, 465)
+scale = Vector2(0.345, 0.345)
+
+[node name="donuts2" parent="." instance=ExtResource("3_tlwt5")]
+visible = false
+position = Vector2(1322, 650)
+scale = Vector2(0.345, 0.345)
+
+[node name="turbine" parent="." instance=ExtResource("7_bq33v")]
+position = Vector2(835, 582)
+scale = Vector2(0.13, 0.13)

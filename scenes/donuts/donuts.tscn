@@ -1,30 +1,30 @@
 [gd_scene load_steps=6 format=3 uid="uid://cikwhhy5op7ji"]
 
 [ext_resource type="Script" uid="uid://cwhvuwomuyxdf" path="res://scenes/donuts/donuts.gd" id="1_1s3h3"]
-[ext_resource type="Texture2D" uid="uid://d2kpbjrgvgojm" path="res://lildonuts.png" id="2_bviin"]
+[ext_resource type="Texture2D" uid="uid://c3m54j1cwsops" path="res://art_assets/tiles/TrashTile_Baseless.png" id="2_ie321"]
 [ext_resource type="PackedScene" uid="uid://bgfvh33m1mgvo" path="res://scenes/interactable/interactable.tscn" id="3_405fl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v4gdy"]
-size = Vector2(20, 31)
+size = Vector2(76.8204, 185)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bviin"]
-size = Vector2(164, 33)
+size = Vector2(679, 190)
 
 [node name="donuts" type="StaticBody2D"]
 script = ExtResource("1_1s3h3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -0.5)
+position = Vector2(-45.5, -271.5)
 scale = Vector2(8.24, 1)
 shape = SubResource("RectangleShape2D_v4gdy")
 debug_color = Color(0.828614, 0.337155, 0.538525, 0.42)
 
 [node name="Lildonuts" type="Sprite2D" parent="."]
-texture = ExtResource("2_bviin")
+texture = ExtResource("2_ie321")
 
 [node name="Interactable" parent="." instance=ExtResource("3_405fl")]
-interact_name = "eat a donut"
+interact_name = "[E] to clear trash"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
-position = Vector2(0, -1.5)
+position = Vector2(-24.5, -271)
 shape = SubResource("RectangleShape2D_bviin")

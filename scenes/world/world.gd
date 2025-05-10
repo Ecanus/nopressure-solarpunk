@@ -3,11 +3,12 @@ extends Node2D
 @onready var tile_map: TileMapLayer = $floor
 #+@onready var cell_pos_x: int = 0
 #@onready var cell_pos_y: int = 0
-@onready var cell_pos: Vector2i 
+@onready var cell_pos: Vector2i
+
 
 func _ready() -> void:
 	pass
-	
+
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("interact"):
 		var mouse_pos: Vector2 = get_global_mouse_position()
@@ -51,7 +52,6 @@ func _process(_delta: float) -> void:
 			cell_pos.y = -1
 		tile_map.set_cell(cell_pos, 0, Vector2i(1,0))
 
-		
 		#This gets the global mouse position
 		#print(mouse_pos)
 		#This gets the tile position

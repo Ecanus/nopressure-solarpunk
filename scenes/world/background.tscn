@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://cyltdtwhwkeui"]
+[gd_scene load_steps=5 format=3 uid="uid://cyltdtwhwkeui"]
 
 [ext_resource type="Texture2D" uid="uid://b7gxpk76dgvwi" path="res://art_assets/world/Background.png" id="1_neoeh"]
+[ext_resource type="Texture2D" uid="uid://c6w6gsj2ed1w2" path="res://art_assets/world/Building_FireEscape.png" id="2_h8e1p"]
 [ext_resource type="Texture2D" uid="uid://bshjeaty7t85p" path="res://art_assets/world/proof_of_concept.png" id="2_rsh60"]
 [ext_resource type="Texture2D" uid="uid://c7utwquhyetk3" path="res://art_assets/world/Building_Back.png" id="3_h8e1p"]
 
@@ -8,14 +9,23 @@
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(959, 540)
-scale = Vector2(1, 1)
 texture = ExtResource("1_neoeh")
 
-[node name="ProofOfConcept" type="Sprite2D" parent="."]
-position = Vector2(964, 540)
-texture = ExtResource("2_rsh60")
+[node name="BuildingFireEscape" type="Sprite2D" parent="."]
+position = Vector2(960, 543)
+texture = ExtResource("2_h8e1p")
 
-[node name="BuildingBack" type="Sprite2D" parent="."]
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="BuildingBack" type="Sprite2D" parent="StaticBody2D"]
 position = Vector2(960, 537)
 scale = Vector2(0.999479, 0.992593)
 texture = ExtResource("3_h8e1p")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(328, 541, 972, 231, 1268, 382, 1397, 286, 970, 206, 252, 518)
+
+[node name="ProofOfConcept" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(960, 542)
+texture = ExtResource("2_rsh60")

@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://i7qr633x7baf" path="res://art_assets/actors/mainchar_wave_128.png" id="5_2hs0m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i3pqv"]
-size = Vector2(59, 112)
+size = Vector2(59, 45)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_sweqy"]
 animations = [{
@@ -17,6 +17,14 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_i3pqv")
+}],
+"loop": true,
+"name": &"flipped",
 "speed": 5.0
 }, {
 "frames": [{
@@ -40,13 +48,8 @@ animations = [{
 motion_mode = 1
 script = ExtResource("1_4flbx")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-visible = false
-texture_filter = 1
-texture = ExtResource("2_i3pqv")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, -13)
+position = Vector2(-0.5, -13.5)
 shape = SubResource("RectangleShape2D_i3pqv")
 
 [node name="InteractingComponent" parent="." instance=ExtResource("3_i3pqv")]
@@ -54,4 +57,6 @@ shape = SubResource("RectangleShape2D_i3pqv")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -13)
 sprite_frames = SubResource("SpriteFrames_sweqy")
+animation = &"flipped"
 autoplay = "default"
+flip_h = true

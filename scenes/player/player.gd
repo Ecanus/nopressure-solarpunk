@@ -3,6 +3,7 @@ extends CharacterBody2D
 var speed: int = 200
 var click_position = Vector2()
 var target_position = Vector2()
+var direction := Input.get_axis("ui_left", "ui_right")
 
 # Click-to-move character code
 func _ready() -> void:

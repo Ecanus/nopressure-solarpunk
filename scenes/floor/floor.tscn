@@ -1,12 +1,13 @@
 [gd_scene load_steps=5 format=4 uid="uid://iyssuun2hbti"]
 
 [ext_resource type="Script" uid="uid://ca1t86estg1mb" path="res://scenes/floor/floor.gd" id="1_oj3tl"]
-[ext_resource type="Texture2D" uid="uid://bivw56v627ebm" path="res://floor_tileset_test.png" id="1_wd3ws"]
+[ext_resource type="Texture2D" uid="uid://bivw56v627ebm" path="res://art_assets/tiles/floor_tileset_test.png" id="1_wd3ws"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qn07e"]
 texture = ExtResource("1_wd3ws")
 texture_region_size = Vector2i(128, 64)
 0:0/0 = 0
+1:0/next_alternative_id = 2
 1:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_qn07e"]

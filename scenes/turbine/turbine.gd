@@ -3,7 +3,7 @@ extends StaticBody2D
 # This is the tutorial that I followed for this: https://www.youtube.com/watch?v=pQINWFKc9_k
 
 @onready var interactable: Area2D = $Interactable
-@onready var lildonuts: Sprite2D = $Lildonuts
+@onready var turbine: Sprite2D = $turbine
 @onready var animated_sprite_2d: AnimatedSprite2D = $"../Player/AnimatedSprite2D" 
 
 
@@ -12,9 +12,9 @@ func _ready() -> void:
 	
 	
 func _on_interact():
-	if lildonuts.frame == 0:
-		lildonuts.frame = 1
+	if turbine.frame == 0:
+		turbine.frame = 1
 		interactable.is_interactable = false
-		if $Lildonuts:
-			$Lildonuts.queue_free()
+		if $turbine:
+			$turbine.queue_free()
 		print("the player ate a donut")
