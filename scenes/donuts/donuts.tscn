@@ -5,16 +5,16 @@
 [ext_resource type="PackedScene" uid="uid://bgfvh33m1mgvo" path="res://scenes/interactable/interactable.tscn" id="3_405fl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v4gdy"]
-size = Vector2(76.8204, 185)
+size = Vector2(30.3398, 185)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bviin"]
-size = Vector2(679, 190)
+size = Vector2(248, 190)
 
 [node name="donuts" type="StaticBody2D"]
 script = ExtResource("1_1s3h3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-45.5, -271.5)
+position = Vector2(-184, -172)
 scale = Vector2(8.24, 1)
 shape = SubResource("RectangleShape2D_v4gdy")
 debug_color = Color(0.828614, 0.337155, 0.538525, 0.42)
@@ -26,5 +26,5 @@ texture = ExtResource("2_ie321")
 interact_name = "[E] to clear trash"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
-position = Vector2(-24.5, -271)
+position = Vector2(-182, -171.5)
 shape = SubResource("RectangleShape2D_bviin")
