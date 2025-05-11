@@ -51,6 +51,8 @@ func _process(_delta: float) -> void:
 		if tile_map_pos.x >= 17 && tile_map_pos.x <= 19 and tile_map_pos.y >= 3 && tile_map_pos.y <= 5:
 			cell_pos.x = -1
 			cell_pos.y = -1
+		else:
+			pass
 		tile_map.set_cell(cell_pos, 0, Vector2i(1,0))
 
 		#This gets the global mouse position
